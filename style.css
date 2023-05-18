@@ -1,0 +1,100 @@
+* {
+    margin: 0%;
+    font-family: 'Inconsolata', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/abstract-uv-ultraviolet-light-composition.jpg);
+    background-size: cover;
+   
+}
+.logo{
+    
+     position: relative;
+    width: 150px;
+    height: 120px;
+    left: calc(100% - 63% );
+    top: calc(100% - 110%);
+    filter: drop-shadow(1px 1px 20px  black);
+    }
+.card {
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+    border: 5px solid;
+    border-radius: 35px;
+     box-shadow:     
+    -30px 1px 50px 10px rgb(37, 139, 170),
+    30px 1px 50px 10px rgb(216, 65, 208)
+  ;
+    border: none;
+    
+   
+    
+}
+.card p{
+    position: relative;
+    top: -40px;
+    font-size: 24px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    color: rgb(90, 195, 221);
+     }
+.card h2{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: rgb(216, 65, 208);
+    text-shadow: 2px 5px 5px black;
+} 
+.card h3{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    padding-right: 10px;
+    color: rgb(216, 65, 208);
+    text-shadow: 2px 5px 5px black;
+}    
+.img-btn1{
+    width: 60px;
+    height: 60px;
+    padding-left: 10px;
+    
+}
+.img-btn2{
+    width: 60px;
+    height: 60px;
+    padding-left: 20px;
+}
+
+@keyframes schimbare-marime{
+    0%{
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+
+}
+.img-btn1:hover{
+   animation-name: schimbare-marime;
+   animation-duration: 0.5s;
+   animation-timing-function: ease;
+   animation-fill-mode: forwards;
+   filter: drop-shadow(1px 1px 20px black);
+   
+   
+}
+.img-btn2:hover{
+    animation-name: schimbare-marime;
+   animation-duration: 0.5s;
+   animation-timing-function: ease;
+   animation-fill-mode: forwards;
+   filter: drop-shadow(1px 1px 20px black);
+   
+}
+
